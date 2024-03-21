@@ -68,6 +68,8 @@ self: super: with self.lib; {
 
   openni2 = self.callPackage ./openni2 { };
 
+  libfranka-git = self.callPackage ./libfranka { };
+
   opensplice_6_9 = self.callPackage ./opensplice { };
   opensplice = self.opensplice_6_9;
 
