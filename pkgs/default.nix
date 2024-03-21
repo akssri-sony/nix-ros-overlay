@@ -150,4 +150,5 @@ self: super: with self.lib; {
   sdformat = self.sdformat_9;
 
   superflore = self.python3Packages.callPackage ./superflore { };
+  rosdep = self.python3Packages.callPackage ./rosdep { };
 }
