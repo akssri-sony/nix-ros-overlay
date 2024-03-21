@@ -173,4 +173,6 @@ self: super: with self.lib; {
     cmakeFlags = cmakeFlags ++ ["-DVTK_MODULE_ENABLE_VTK_GUISupportQt:STRING=YES"];
     nativeBuildInputs = nativeBuildInputs ++ [ self.qt5.wrapQtAppsHook self.qt5.full ];
   });
+
+  rosdep = self.python3Packages.callPackage ./rosdep { };
 }
