@@ -5,7 +5,8 @@ stdenv.mkDerivation rec {
 
   src = builtins.fetchGit {
     url = "https://github.com/frankaemika/libfranka.git";
-    ref = "refs/tags/${version}";
+    # ref = "refs/tags/${version}";
+    rev = "c452ba20397cde846fe2e48d0be94b522ef88dac";
     submodules = true;
   };
 
