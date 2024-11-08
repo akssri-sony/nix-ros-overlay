@@ -29,11 +29,11 @@ let
 
   package = buildPythonPackage rec {
     pname = "colcon-core";
-    version = "0.18.0";
+    version = "0.18.3";
 
     src = fetchPypi {
       inherit pname version;
-      hash = "sha256-MXfbdUZlFawbQBlMG8ZtCqFfBUdPzgud9XVRMwAOOw4=";
+      hash = "sha256-iz3PCxQLKFGpFpxgs+0sp4puSP7I7Oze76KHpnFfLhc=";
     };
 
     propagatedBuildInputs = [
